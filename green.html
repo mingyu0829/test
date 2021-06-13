@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+    <!-- MAIN (Center website) -->
+<div class="main">
+
+    <h1>TEST</h1>
+    <hr>
+    
+    <h2>KWAJAEYONGU</h2>
+    <p>Type</p>
+  
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+      <button class="btn" onclick="filterSelection('nature')"> Nature</button>
+      <button class="btn" onclick="filterSelection('cars')"> Machine</button>
+      <button class="btn" onclick="filterSelection('people')"> Other</button>
+    </div>
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+      <div class="column">
+        <div class="content">
+          <img src="image01.jpg" alt="Mountains" style="width:100%" id="myImg">
+          <h3>My Work</h3>
+          <p>TEST..</p>
+        </div>
+      </div>
+      <div class="column cars ">
+        <div class="content">
+          <img src="image02.jpg" alt="Lights" style="width:100%" id="myImg_2">
+          <h3>My Work</h3>
+          <p>TEST..</p>
+        </div>
+      </div>
+      <div class="column people">
+        <div class="content">
+          <img src="image03.jpg" alt="Nature" style="width:100%" id="myImg_3">
+          <h3>My Work</h3>
+          <p>TEST..</p>
+        </div>
+      </div>
+      <div class="column people">
+        <div class="content">
+          <img src="image04.jpg" alt="Mountains" style="width:100%" id="myImg_4">
+          <h3>My Work</h3>
+          <p>TEST..</p>
+        </div>
+      </div>
+    </div>
+    <!-- END MAIN -->
+</div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
+
+<script src="test.js"></script>
+</body>
+</html>
